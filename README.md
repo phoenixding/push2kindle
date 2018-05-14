@@ -51,7 +51,10 @@ instructions.
 	```shell
 	$sudo pip3 install --upgrade https://github.com/phoenixding/push2kindle/zipball/master
 	```
- 
+	The above pip installation options should be working for Linux, Window and MacOS systems.
+	For MacOS users, it's recommended to use python3 (pip3) installation.   
+	The default python2 (pip) in MacOS has some compatibility issues with a few dependent libraries.   
+	The users would have to install their own version of python2 (e.g. via Anocanda) if they prefer to use python2 in MacOS.  
 # USAGE
 
 ```
