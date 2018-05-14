@@ -17,21 +17,11 @@ Note: please add your fromaddr email account into the "Approved Personal Documen
 """
 
 import pdb,sys,os
+reload(sys)
+sys.setdefaultencoding('utf8')
 import smtplib
 from email import encoders
 
-def encode_file(fi):
-	suffix=fi.split('.')[-1]
-	if suffix=='txt':
-		f=open(fi,'r')
-		lf=f.readlines()
-		f.close()
-		lf=[item.strip() for item in lf]
-		lf="\n".join(lf)
-		lf=lf.encode("utf-8")
-		f=open(fi,'wb')
-		f.write(lf)
-		f.close()
 
 if int(sys.version[0])<3:
     from email.MIMEBase import MIMEBase
@@ -70,11 +60,7 @@ def main():
 		print(__doc__)
 		sys.exit(0)
 
-	#=============================================
-	# encode the txt file into UTF-8
-	for fi in sys.argv[1:]:
-		encode_file(fi)
-		
+	#=============================================		
 	# add the attachment
 	# attachment file
 	attachments=sys.argv[1:]
@@ -86,6 +72,7 @@ def main():
 	try:
 		#pdb.set_trace()
 		msg = MIMEMultipart()
+		msg['Subject']='convert'
 		for file in attachments:
 			fp = open(file, 'rb')
 			part = MIMEBase('application', "octet-stream")
