@@ -45,11 +45,11 @@ instructions.
 
 	python 2:  
 	```shell
-	$sudo pip install --upgrade https://github.com/phoenixding/scdiff/zipball/master
+	$sudo pip install --upgrade https://github.com/phoenixding/push2kindle/zipball/master
 	```
 	python 3: 
 	```shell
-	$sudo pip3 install --upgrade https://github.com/phoenixding/scdiff/zipball/master
+	$sudo pip3 install --upgrade https://github.com/phoenixding/push2kindle/zipball/master
 	```
  
 # USAGE
