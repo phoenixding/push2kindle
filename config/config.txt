@@ -1,0 +1,5 @@
+fromaddr	
+toaddr
+user
+password
+smtp
