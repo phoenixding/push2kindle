@@ -58,7 +58,7 @@ instructions.
 push2kindle <file 1> <file 2> ...<file n>
 ```
 
-Note: this is a 50MB limit by Amazon.
+Note: there is a 50MB limit by Amazon.
 
 The users might need to setup a config file at the first run. 
 The config file path will be given by the program.
