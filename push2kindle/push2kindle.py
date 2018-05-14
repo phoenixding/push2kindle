@@ -17,13 +17,13 @@ Note: please add your fromaddr email account into the "Approved Personal Documen
 """
 
 import pdb,sys,os
-reload(sys)
-sys.setdefaultencoding('utf8')
 import smtplib
 from email import encoders
 
 
 if int(sys.version[0])<3:
+	reload(sys)
+	sys.setdefaultencoding('utf8')
     from email.MIMEBase import MIMEBase
     from email.MIMEMultipart import MIMEMultipart
 else:
