@@ -22,8 +22,8 @@ from email import encoders
 
 
 if int(sys.version[0])<3:
-	reload(sys)
-	sys.setdefaultencoding('utf8')
+    reload(sys)
+    sys.setdefaultencoding('utf8')
     from email.MIMEBase import MIMEBase
     from email.MIMEMultipart import MIMEMultipart
 else:
